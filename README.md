@@ -1,3 +1,5 @@
+-Added lastdigit support for jsfour-register!!!
+
 # jsfour-idcard
 This is an updated version of my <a href="https://github.com/jonassvensson4/jsfour-legitimation">jsfour-legitimation<a/>. It has and ID card, firearms license and a driver license
 
