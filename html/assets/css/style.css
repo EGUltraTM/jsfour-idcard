@@ -42,6 +42,12 @@ img {
   left: 0;
   width: 100px;
 }
+#personnummer {
+  position: absolute;
+  left: -130px;
+  bottom: -150px;
+  width: 120px;
+}
 #sex {
   position: absolute;
   left: 90px;

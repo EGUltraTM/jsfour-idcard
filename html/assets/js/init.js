@@ -6,6 +6,7 @@ $(document).ready(function(){
       var userData    = event.data.array['user'][0];
       var licenseData = event.data.array['licenses'];
       var sex         = userData.sex;
+	  var pNumb 	  = userData.dateofbirth.substring(2,4) + userData.dateofbirth.substring(5,7) + userData.dateofbirth.substring(8,10);
 
       if ( type == 'driver' || type == null) {
         $('img').show();
@@ -22,6 +23,7 @@ $(document).ready(function(){
         $('#name').text(userData.firstname + ' ' + userData.lastname);
         $('#dob').text(userData.dateofbirth);
         $('#height').text(userData.height);
+		$('#personnummer').text(pNumb + '-' + userData.lastdigits);
         $('#signature').text(userData.firstname + ' ' + userData.lastname);
 
         if ( type == 'driver' ) {
@@ -62,6 +64,7 @@ $(document).ready(function(){
       $('#name').text('');
       $('#dob').text('');
       $('#height').text('');
+	  $('#personnummer').text('');
       $('#signature').text('');
       $('#sex').text('');
       $('#id-card').hide();
